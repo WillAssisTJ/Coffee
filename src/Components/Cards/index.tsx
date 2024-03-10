@@ -24,7 +24,7 @@ const Cards: FC<CardsProps> = ({ post }) => {
     <>
      <img
           className="capa"
-          src={`../../src/assets/Coffes/${post.id}/Coffee.svg`}
+          src={`../src/assets/Coffes/${post.id}/Coffee.svg`}
           alt="Café"
         />
       <div
