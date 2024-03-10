@@ -1,0 +1,277 @@
+.title-selection {
+  font-family: "Baloo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: #403937;
+  margin-bottom: -1px;
+}
+
+.card-coffee {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  height: auto;
+  padding: 40px;
+  gap: 40px;
+  background-color: #f3f2f2;
+  border-radius: 6px 44px 6px 44px;
+  padding-bottom: 100px;
+}
+
+.coffee-selection {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+}
+
+.item-name {
+  margin-left: 80px;
+  margin-top: 5px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: #403937;
+}
+
+.item-quantity {
+  margin-left: 80px;
+}
+
+.button-value-container2 {
+  margin-left: 81px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.button-group2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  background-color: #e6e5e5;
+  width: 72px;
+  height: 32px;
+}
+
+.control-button2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e6e5e5;
+  height: 32px;
+  flex-grow: 1;
+}
+
+.control-button2 img {
+  padding: 8px;
+  width: 10.94px;
+  height: 15px;
+}
+
+.quantity2 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.remove {
+  margin-left: 28px;
+  width: 91px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: #e6e5e5;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  height: 32px;
+}
+
+.remove img {
+  width: 16px;
+  height: 16px;
+}
+
+.calculation {
+  margin-left: 300px;
+  margin-top: -36px;
+  position: absolute;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+.line {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e6e5e5;
+}
+
+.section1,
+.section2 {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  color: #574f4d;
+  margin-bottom: 1px solid;
+}
+
+.section3 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #403937;
+  margin-left: 400px;
+  margin-top: -35px;
+  position: absolute;
+}
+
+.section4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.section5 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  margin-left: 386px;
+  margin-top: -34px;
+  color: #574f4d;
+  position: absolute;
+}
+
+.section6 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20.8px;
+  margin-left: 368px;
+  margin-top: -44px;
+  color: #403937;
+  position: absolute;
+}
+
+@media (max-width: 1237px) {
+  .card-coffee {
+    position: absolute;
+    margin-top: 220px;
+    width: 559px;
+    height: auto;
+    margin-left: -300px;
+    padding-bottom: 60px;
+  }
+  .title-selection{
+    position: absolute;
+    margin-left: -290px;
+    margin-top: 200px;
+  }
+  .calculation {
+    margin-left: 480px;
+   }
+   .section5{
+    margin-left: 484px;
+   }
+   .section3{
+    margin-left: 498px;
+   }
+   .section6{
+    margin-left: 468px;
+   }
+}
+@media (max-width: 690px){
+  .card-coffee{
+    width: 412px;
+    margin-left: -245px;
+    
+  }
+  .title-selection{
+    margin-left: -210px;
+  }
+  .calculation {
+    margin-left: 350px;
+   }
+   .section5{
+    margin-left: 359px;
+   }
+   .section3{
+    margin-left: 372px;
+   }
+   .section6{
+    margin-left: 340px;
+   }
+}
+@media (max-width: 491px){
+  .card-coffee{
+    width: 320px;
+    margin-left: -200px;
+    margin-top: 250px;
+  }
+  .title-selection{
+    margin-top: 220px;
+    margin-left: -180px;
+  }
+ .calculation {
+  margin-left: 280px;
+ }
+ .section5{
+  margin-left: 277px;
+ }
+ .section3{
+  margin-left: 291px;
+ }
+ .section6{
+  margin-left: 260px;
+ }
+}
+@media (max-width: 396px){
+  .card-coffee{
+    width: 200px;
+    margin-left: -141px;
+    margin-top: 170px;
+    padding-right: 45px;
+  }
+  .title-selection{
+    margin-top: 150px;
+    margin-left: -120px;
+  }
+ .calculation {
+  margin-left: 170px;
+ }
+ .section5{
+  margin-left: 167px;
+ }
+ .section3{
+  margin-left: 182px;
+ }
+ .section6{
+  margin-left: 150px;
+ }
+ .control-button2{
+  width: 15px;
+  margin-left: 10px;
+ }
+ .control-button2 img {
+  width: 10px;
+  margin-left: -15px;
+ }
+ .remove{
+  margin-left: 5px;
+ }
+}

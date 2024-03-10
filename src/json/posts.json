@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "tipo": "TRADICIONAL",
+        "titulo": "Expresso Tradicional",
+        "texto": "O tradicional café feito com água \n quente e grãos moídos"
+    },
+    {
+        
+        "id": 2 ,
+        "tipo": "TRADICIONAL",
+        "titulo": "Expresso Americano",
+        "texto": "Expresso diluído, menos intenso \n que o tradicional"
+    },
+    {
+        "id": 3,
+        "tipo": "TRADICIONAL",
+        "titulo": "Expresso Cremoso",
+        "texto": "Café expresso tradicional \n com espuma cremosa"
+    },
+    {
+        "id": 4,
+        "tipo": "TRADICIONAL",
+        "tipo20": "GELADO",
+        "titulo": "Expresso Gelado",
+        "texto": "Bebida preparada com café \n expresso e cubos de gelo"
+    },
+    {
+        "id": 5,
+        "tipo":"TRADICIONAL",
+        "tipo2": "COM LEITE",
+        "titulo": "Café com Leite",
+        "texto": "Meio a meio de expresso \n tradicional com leite vaporizado"
+    },
+    {
+        "id": 6,
+        "tipo":"TRADICIONAL",
+        "tipo2": "COM LEITE",
+        "titulo": "Latte",
+        "texto": "Uma dose de café expresso com o \n dobro de leite e espuma cremosa"
+    },
+    {
+        "id": 7,
+        "tipo":"TRADICIONAL",
+        "tipo2": "COM LEITE",
+        "titulo": "Capuccino",
+        "texto": "Bebida com canela feita de doses \n iguais de café, leite e espuma"
+    },
+    {
+        "id": 8,
+        "tipo":"TRADICIONAL",
+        "tipo2": "COM LEITE",
+        "titulo": "Macchiato",
+        "texto": "Café expresso misturado com um \n pouco de leite quente e espuma"
+    },
+    {
+        "id": 9,
+        "tipo":"TRADICIONAL",
+        "tipo2": "COM LEITE",
+        "titulo": "Mocaccino",
+        "texto": "Café expresso com calda de \n chocolate, pouco leite e espuma"
+    },
+    {
+        "id": 10,
+        "tipo":"ESPECIAL",
+        "tipo2": "COM LEITE",
+        "titulo": "Chocolate Quente",
+        "texto": "Bebida feita com chocolate \n dissolvido no leite quente e café"
+    },
+    {
+        "id": 11,
+        "tipo":"ESPECIAL",
+        "tipo2": "ALCOÓLICO",
+        "tipo3": "GELADO",
+        "titulo": "Cubano",
+        "texto": "Drink gelado de café expresso \n com rum, creme de leite e hortelã"
+    },
+    {
+        "id": 12,
+        "tipo":"ESPECIAL",
+        "titulo": "Havaiano",
+        "texto": "Bebida adocicada preparada com \n café e leite de coco"
+    },
+    {
+        "id": 13,
+        "tipo":"ESPECIAL",
+        "titulo": "Árabe",
+        "texto": "Bebida preparada com grãos de \n café árabe e especiarias"
+    },
+    {
+        "id": 14,
+        "tipo":"ESPECIAL",
+        "tipo2": "ALCOÓLICO",
+        "titulo": "Irlandês",
+        "texto": "Bebida a base de café, uísque \n irlandês, açúcar e chantily"
+    }
+]

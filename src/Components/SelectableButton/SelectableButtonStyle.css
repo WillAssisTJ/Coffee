@@ -1,0 +1,259 @@
+.container-pay {
+  width: 640px;
+  height: 180px;
+  background-color: #f3f2f2;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 6px;
+  margin-left: 40px;
+  position: absolute;
+  margin-top: 450px;
+}
+.flex-pay {
+  margin-left: -98px;
+}
+
+.pay-img2 {
+  position: absolute;
+  margin-left: -25px;
+}
+.pay2 {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 20.8px;
+  font-weight: 400;
+  color: #403937;
+}
+
+.delivery3 {
+  margin-top: -7px;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 18.2px;
+  font-weight: 400;
+  color: #574f4d;
+}
+
+.selectable-button1 {
+  width: 178.67px;
+  height: 51px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e6e5e5;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #574f4d;
+  position: absolute;
+  margin-top: 90px;
+  margin-left: -381px;
+  cursor: pointer;
+}
+.selectable-button2 {
+  width: 178.67px;
+  height: 51px;
+  border: none;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #e6e5e5;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #574f4d;
+  position: absolute;
+  margin-top: 90px;
+  cursor: pointer;
+}
+.selectable-button3 {
+  width: 178.67px;
+  height: 51px;
+  border: none;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #e6e5e5;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #574f4d;
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 382px;
+  cursor: pointer;
+}
+
+.pay-img {
+  position: absolute;
+  margin-left: -20px;
+}
+
+.selected1,
+.selected2,
+.selected3 {
+  background-color: #ebe5f9;
+  border: 1px solid #8047f8;
+}
+@media (max-width: 1237px) {
+  .container-pay {
+    margin-top: 650px;
+    position: absolute;
+  }
+}
+@media (max-width: 690px) {
+  .container-pay {
+    width: 490px;
+    margin-top: 800px;
+    margin-left: -2px;
+  }
+  .selectable-button1,
+  .selectable-button2,
+  .selectable-button3 {
+    width: 100px;
+  }
+  .selectable-button1 {
+    margin-left: -280px;
+  }
+  .selectable-button2 img {
+    margin-top: -20px;
+    margin-left: -45px;
+  }
+  .selectable-button2 span {
+    position: absolute;
+    display: flex;
+    margin-top: -20px;
+    margin-left: -5px;
+  }
+  .selectable-button3 {
+    margin-right: 100px;
+  }
+  .selectable-button3 img {
+    margin-top: -10px;
+    margin-left: -45px;
+  }
+  .selectable-button3 span {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -20px;
+  }
+  .pay2 {
+    margin-left: 70px;
+  }
+  .delivery3 {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 491px) {
+  .container-pay {
+    width: 400px;
+  }
+  .selectable-button1,
+  .selectable-button2,
+  .selectable-button3 {
+    width: 80px;
+  }
+  .selectable-button1 {
+    margin-left: -200px;
+  }
+  .selectable-button1 img {
+    margin-left: -35px;
+    margin-top: -20px;
+  }
+  .selectable-button1 span {
+    position: absolute;
+    display: flex;
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+  .selectable-button2 img {
+    margin-top: -20px;
+    margin-left: -38px;
+  }
+  .selectable-button2 span {
+    position: absolute;
+    display: flex;
+    margin-top: -20px;
+    margin-left: -5px;
+  }
+  .selectable-button3 {
+    margin-right: 170px;
+  }
+  .selectable-button3 img {
+    margin-top: -10px;
+    margin-left: -37px;
+  }
+  .selectable-button3 span {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -20px;
+  }
+  .pay2 {
+    font-size: 14px;
+    margin-left: 120px;
+  }
+  .delivery3 {
+    margin-left: 120px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 396px){
+  .container-pay {
+    width: 280px;
+    height: 140px;
+    margin-top: 720px;
+  }
+  .selectable-button1,
+  .selectable-button2,
+  .selectable-button3 {
+    width: 60px;
+    height: 40px;
+    font-size: 10px;
+  }
+  .selectable-button1 {
+    margin-left: -175px;
+    
+  }
+  .selectable-button1 img {
+    width: 12px;
+    margin-left: -5px;
+    margin-top: -19px;
+  }
+  .selectable-button1 span {
+    position: absolute;
+    display: flex;
+    line-height: 15px;
+    margin-left: -1px;
+    margin-top: -10px;
+  }
+  .selectable-button2 img {
+    width: 12px;
+    margin-top: -18px;
+    margin-left: -6px;
+  }
+  .selectable-button2 span {
+    position: absolute;
+    line-height: 15px;
+    margin-top: -10px;
+    margin-left: -11px;
+  }
+  .selectable-button3 {
+    margin-right: 200px;
+  }
+  .selectable-button3 img {
+    width: 12px;
+    margin-top: -18px;
+    margin-left: -6px;
+  }
+  .selectable-button3 span {
+    position: absolute;
+    margin-top: -8px;
+    margin-left: -18px;
+  }
+  .pay2 {
+    font-size: 14px;
+    margin-left: 128px;
+  }
+  .delivery3 {
+    margin-left: 128px;
+    font-size: 12px;
+  }
+}

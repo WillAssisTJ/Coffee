@@ -1,0 +1,84 @@
+.cards-contaiiner{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 20px;
+  
+}
+.card-wrapper {
+  margin-top: 50px;
+  width: 256px;
+  height: auto;
+  display: flex;
+  border: #ccc;
+  border-radius: 6px 36px 6px 36px;
+  background-color: #f3f2f2;
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 1237px){
+  .cards-contaiiner{
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1134px){
+  .cards-contaiiner{
+    justify-content: space-around;
+    margin: 2px;
+    gap: 10px;
+    margin-top: 210px;
+  }
+}
+
+@media (max-width: 935px){
+  .cards-contaiiner{
+    margin-top: 300px;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 900px){
+  .cards-contaiiner{
+    justify-content: space-around;
+    margin-top: 210px;
+  }
+}
+
+@media (max-width: 717px){
+  .cards-contaiiner{
+    justify-content: space-around;
+    margin: 50px;
+    margin-top: 230px;
+  }
+}
+
+
+@media (max-width: 637px){
+  .cards-contaiiner{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px){
+  .cards-contaiiner{
+    justify-content: space-around;
+    margin-top: 150px;
+  }
+}
+@media (max-width: 499px){
+  .cards-contaiiner{
+    margin-top: 100px;
+  }
+}
+@media (max-width: 376px){
+  .cards-contaiiner{
+    margin-top: 290px;
+  }
+}
+@media (max-width: 290px){
+  .cards-contaiiner{
+    margin-top: 340px;
+  }
+}

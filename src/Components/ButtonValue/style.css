@@ -1,0 +1,40 @@
+.button-value-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  background-color: #E6E5E5;
+  width: 72px;
+  height: 38px;
+}
+
+.control-button {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  background-color: #E6E5E5;
+  height: 38px;
+  flex-grow: 1;
+}
+
+.quantity {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.image-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+

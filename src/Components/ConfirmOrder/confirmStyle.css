@@ -1,0 +1,18 @@
+.confirm{
+    background-color: #DBAC2C;
+    width: 368px;
+    height: 46px;
+    border: none;
+    border-radius: 6px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    margin-left: 40px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.confirm:hover {
+    background-color: #edd07c;
+}

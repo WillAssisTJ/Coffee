@@ -1,0 +1,95 @@
+
+.capa {
+  width: 120px;
+  height: 120px;
+  margin-top: -45px; 
+  margin-left: 67px; 
+  margin-right: auto; 
+  display: block;
+  position: absolute;
+}
+
+
+.post-tipo {
+  margin-top: 45px;
+  font-family: "Roboto";
+  line-height: 13px;
+  font-weight: 700;
+  font-size: 10px;
+  color: #c47f17;
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.tipo1,
+.tipo2,
+.tipo3 {
+  background-color: #f1e9c9;
+  width: 81px;
+  height: 21px;
+  border-radius: 100px;
+}
+
+.hidden {
+  display: none;
+}
+.title {
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #403937
+}
+.paragraph {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+  color: #8d8686;
+  margin-top: -20px;
+}
+.container-button {
+  display: flex;
+}
+.money {
+  margin-top: 32px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+  color: #574F4D;
+  margin-left: 20px;
+  position: absolute;
+}
+.title {
+  font-size: 20px;
+  font-family: "Baloo 2";
+  font-weight: 700;
+  line-height: 26px;
+}
+.price {
+  font-family: "Baloo 2";
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 31.2px;
+  color: #574F4D;
+  margin-left: 40px;
+  margin-top: 25px;
+  position: absolute;
+}
+
+.button-value {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 120px;
+  padding-bottom: 20px;
+}
+
+
+
