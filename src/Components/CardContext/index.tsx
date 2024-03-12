@@ -9,7 +9,7 @@ interface CardItem {
 
 interface CardContextType {
   cardItems: CardItem[];
-  addToCard: (item: CardItem) => void;
+  addToCard: (item: CardItem, img: string) => void;
   removeFromCart: (id: number) => void;
 }
 
@@ -26,7 +26,7 @@ export const CardProvider: React.FC<React.PropsWithChildren<unknown>> = ({
 }) => {
   const [cardItems, setCardItems] = useState<CardItem[]>([]);
 
-  const addToCard = (item: CardItem) => {
+  const addToCard = (item: CardItem, img: string) => {
     setCardItems((prevItems) => {
       const existingItemIndex = prevItems.findIndex((i) => i.id === item.id);
       if (existingItemIndex !== -1) {
@@ -37,7 +37,7 @@ export const CardProvider: React.FC<React.PropsWithChildren<unknown>> = ({
         };
         return updatedItems;
       } else {
-        return [...prevItems, item];
+        return [...prevItems, {...item, img}];
       }
     });
   };

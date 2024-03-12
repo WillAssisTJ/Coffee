@@ -40,7 +40,7 @@ const ButtonValue: FC<ButtonValueProps> = ({ id, name, img }) => {
       </div>
       <button
         className="image-button"
-        onClick={() => addToCard({ id, name, img, quantity: buy })}
+        onClick={() => addToCard({ id, name, img, quantity: buy }, img)}
       >
         <img src={buyImg} alt="Carrinho de compra" />
       </button>

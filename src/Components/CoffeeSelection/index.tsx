@@ -84,7 +84,7 @@ const CoffeeSelection: React.FC = () => {
                 </button>
               </div>
               <div className="line"></div>
-            </div>
+            </div> 
           );
         })}
         <div className="total-section">

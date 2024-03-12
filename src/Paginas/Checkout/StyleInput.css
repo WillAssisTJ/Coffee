@@ -211,17 +211,14 @@
 }
 
 @media (max-width: 1237px) {
-  .primary {
-    display: flex;
+  .primary{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
   }
-  .confirm {
-    margin-top: 385px;
-    margin-left: -165px;
+  .confirm{
+    margin-top: -61px;
+    margin-left: 170px;
   }
 }
 @media (max-width: 690px) {
@@ -264,7 +261,7 @@
     margin-top: 472px;
   }
   .confirm{
-    margin-left: -180px;
+    margin-left: 61px;
   }
 }
 @media (max-width: 491px) {
@@ -288,8 +285,7 @@
   }
   .confirm {
     width: 250px;
-    margin-left: -120px;
-    margin-top: 420px;
+    margin-left: 82px;
   }
   .delivery2 {
     margin-bottom: 40px;
@@ -311,7 +307,7 @@
   }
   .confirm {
     width: 200px;
-    margin-left: -90px;
-    margin-top: 340px;
+    margin-left: 55px;
+    
   }
 }

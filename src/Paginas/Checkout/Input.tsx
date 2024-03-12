@@ -143,7 +143,7 @@ const Input = () => {
         <Link to="/success">
           <button className="confirm" disabled={!isFormFilled}>
             CONFIRMAR PEDIDO
-          </button>
+          </button> 
         </Link>
       </div>
     </div> 

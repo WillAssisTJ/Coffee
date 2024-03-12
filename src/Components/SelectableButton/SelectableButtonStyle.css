@@ -95,15 +95,14 @@
 }
 @media (max-width: 1237px) {
   .container-pay {
-    margin-top: 650px;
-    position: absolute;
+    margin-top: 0px;
+    position: sticky;
   }
 }
 @media (max-width: 690px) {
   .container-pay {
     width: 490px;
-    margin-top: 800px;
-    margin-left: -2px;
+    margin-left: -1px;
   }
   .selectable-button1,
   .selectable-button2,
@@ -199,7 +198,6 @@
   .container-pay {
     width: 280px;
     height: 140px;
-    margin-top: 720px;
   }
   .selectable-button1,
   .selectable-button2,
@@ -218,7 +216,7 @@
     margin-top: -19px;
   }
   .selectable-button1 span {
-    position: absolute;
+    position: absolute; 
     display: flex;
     line-height: 15px;
     margin-left: -1px;

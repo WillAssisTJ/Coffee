@@ -44,7 +44,7 @@ const SelectableButton: React.FC = () => {
         <img src={money} alt="Dinheiro" className="pay-img" />
        <span>Dinheiro</span> 
       </button>
-    </div>
+    </div> 
   );
 };
 

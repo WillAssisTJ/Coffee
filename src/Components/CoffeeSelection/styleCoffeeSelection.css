@@ -170,17 +170,18 @@
 
 @media (max-width: 1237px) {
   .card-coffee {
-    position: absolute;
-    margin-top: 220px;
+    margin-top: 40px;
     width: 559px;
     height: auto;
-    margin-left: -300px;
+    margin-left: 45px;
     padding-bottom: 60px;
+    position: sticky;
   }
   .title-selection{
-    position: absolute;
-    margin-left: -290px;
-    margin-top: 200px;
+    margin-bottom: -40px;
+    position: sticky;
+    margin-left: 45px;
+    
   }
   .calculation {
     margin-left: 480px;
@@ -198,11 +199,7 @@
 @media (max-width: 690px){
   .card-coffee{
     width: 412px;
-    margin-left: -245px;
-    
-  }
-  .title-selection{
-    margin-left: -210px;
+    margin-left: 2px;
   }
   .calculation {
     margin-left: 350px;
@@ -220,13 +217,8 @@
 @media (max-width: 491px){
   .card-coffee{
     width: 320px;
-    margin-left: -200px;
-    margin-top: 250px;
   }
-  .title-selection{
-    margin-top: 220px;
-    margin-left: -180px;
-  }
+  
  .calculation {
   margin-left: 280px;
  }
@@ -243,13 +235,13 @@
 @media (max-width: 396px){
   .card-coffee{
     width: 200px;
-    margin-left: -141px;
-    margin-top: 170px;
-    padding-right: 45px;
+    margin-left: px;
+   
+    padding-right: 60px;
   }
   .title-selection{
-    margin-top: 150px;
-    margin-left: -120px;
+    
+    margin-left: px;
   }
  .calculation {
   margin-left: 170px;

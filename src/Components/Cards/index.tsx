@@ -2,17 +2,19 @@ import ButtonValue from "../ButtonValue";
 import "./styleCards.css";
 import { FC } from "react";
 
-interface Post {
+
+interface Coffee {
   id: number; 
   tipo: string;
   tipo2?: string;
   tipo3?: string;
   titulo: string;
   texto: string;
+  img: string;
 }
 
 interface CardsProps {
-  post: Post;
+  post: Coffee;
   onSelectItem?: (title: string, quantity: number) => void;
 }
 
@@ -24,7 +26,7 @@ const Cards: FC<CardsProps> = ({ post }) => {
     <>
      <img
           className="capa"
-          src={`../src/assets/Coffes/${post.id}/Coffee.svg`}
+          src={post.img}
           alt="Café"
         />
       <div
@@ -61,7 +63,7 @@ const Cards: FC<CardsProps> = ({ post }) => {
             <ButtonValue
               id={post.id}
               name={post.titulo}
-              img={`../../src/assets/Coffes/${post.id}/Coffee.svg`}
+              img={post.img}
             />
           </div>
         </div> 
