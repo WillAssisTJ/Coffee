@@ -194,7 +194,7 @@
     font-size: 12px;
   }
 }
-@media (max-width: 396px){
+@media (max-width: 396px) {
   .container-pay {
     width: 280px;
     height: 140px;
@@ -208,7 +208,6 @@
   }
   .selectable-button1 {
     margin-left: -175px;
-    
   }
   .selectable-button1 img {
     width: 12px;
@@ -216,7 +215,7 @@
     margin-top: -19px;
   }
   .selectable-button1 span {
-    position: absolute; 
+    position: absolute;
     display: flex;
     line-height: 15px;
     margin-left: -1px;

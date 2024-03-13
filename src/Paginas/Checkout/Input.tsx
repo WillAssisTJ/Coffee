@@ -1,33 +1,35 @@
-import "./StyleInput.css";
+import React, { useEffect, useRef, useState } from "react";
+import { useAddressContext } from "../../Components/AddressContext/AddressContext";
 import api from "../../services/api";
 import location from "../../assets/localização2.svg";
-import { useEffect, useState } from "react";
-import { useAddressContext } from "../../Components/AddressContext/AddressContext";
 import SelectableButton from "../../Components/SelectableButton/SelectableButton";
 import { Link } from "react-router-dom";
 import CoffeeSelection from "../../Components/CoffeeSelection";
+import { useNumeroContext } from "../../Components/NumberContext/NumeroContext";
+import "./StyleInput.css";
 
 interface CepData {
   logradouro?: string;
   complemento?: string;
   bairro?: string;
   localidade?: string;
-  numero?: string;
   uf?: string;
 }
 
 const Input = () => {
   const { setAddress } = useAddressContext();
-  const [input, setInput] = useState<number | undefined>();
+  const { numero, setNumero } = useNumeroContext();
+  const [input, setInput] = useState<string>("");
   const [cep, setCep] = useState<CepData>({});
-  const [numero, setNumero] = useState<string>("");
   const [isFormFilled, setIsFormFilled] = useState<boolean>(false);
+
+  const numeroInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const formFields = [
       cep.logradouro,
       cep.bairro,
-      cep.localidade,
+      cep.localidade, 
       cep.uf,
       numero,
     ];
@@ -38,12 +40,15 @@ const Input = () => {
   }, [cep, numero]);
 
   const handleSearch = async () => {
-    if (input && input.toString().length === 8) {
+    if (input.length === 9 && input.includes("-")) {
       try {
-        const response = await api.get(`${input}/json`);
-        const updatedCep = { ...response.data, numero: numero };
+        const response = await api.get(`${input.replace("-", "")}/json`);
+        const updatedCep = { ...response.data };
         setCep(updatedCep);
         setAddress(updatedCep, numero);
+        if (numeroInputRef.current) {
+          numeroInputRef.current.focus();
+        }
       } catch (error) {
         setCep({});
       }
@@ -52,29 +57,40 @@ const Input = () => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
-    setInput(parseInt(value));
-    if (!isNaN(parseInt(value))) {
-      handleSearch();
-    }
+    const formattedValue = value
+      .replace(/\D/g, "")
+      .slice(0, 9)
+      .replace(/(\d{5})(\d{3})/, "$1-$2");
+    setInput(formattedValue);
+  };
+
+  const handleBlur = () => {
+    handleSearch();
+  };
+
+  const handleNumeroChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    setNumero(value);
   };
 
   return (
-    <div style={{ display: 'flex', width: '100%' }} className="primary">
+    <div style={{ display: "flex", width: "100%" }} className="primary">
       <div className="delivery1">
         <p className="complete">Complete seu pedido</p>
         <div className="delivery">
           <p className="deliver">
-            <img src={location} alt="" />
+            <img src={location} alt="localização" />
             Endereço de Entrega
-          </p>
+          </p> 
           <p className="address">
             Informe o Endereço onde deseja receber seu pedido
           </p>
           <input
             type="text"
             placeholder="CEP"
-            value={input ?? ""}
+            value={input}
             onChange={handleChange}
+            onBlur={handleBlur}
             className="cep"
           />
           <label htmlFor="street"></label>
@@ -88,9 +104,10 @@ const Input = () => {
           />
           <label htmlFor="number"></label>
           <input
+            ref={numeroInputRef}
             type="text"
             placeholder="Número"
-            onChange={(e) => setNumero(e.target.value)}
+            onChange={handleNumeroChange}
             value={numero}
             className="number-street"
             id="number"
@@ -135,7 +152,6 @@ const Input = () => {
             id="uf"
           />
         </div>
-        
       </div>
       <SelectableButton />
       <div className="delivery2">
@@ -143,10 +159,10 @@ const Input = () => {
         <Link to="/success">
           <button className="confirm" disabled={!isFormFilled}>
             CONFIRMAR PEDIDO
-          </button> 
+          </button>
         </Link>
       </div>
-    </div> 
+    </div>
   );
 };
 

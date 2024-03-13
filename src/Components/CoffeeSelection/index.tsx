@@ -46,7 +46,7 @@ const CoffeeSelection: React.FC = () => {
 
   const remove = (id: number) => {
     removeFromCart(id);
-  };
+  }; 
 
   return (
     <>

@@ -5,8 +5,8 @@ interface CepData {
   complemento?: string;
   bairro?: string;
   localidade?: string;
-  numero?: string;
-  uf?: string;
+  numero?: string; 
+  uf?: string; 
 }
 
 interface AddressContextType {
@@ -26,8 +26,7 @@ export const AddressProvider: React.FC<AddressProviderProps> = ({ children }) =>
   const [address, setAddressState] = useState<CepData>({});
 
   const setAddress = (newAddress: CepData, numeroRua: string) => {
-    setAddressState(newAddress);
-    setAddressState(prevAddress => ({ ...prevAddress, numero: numeroRua })); 
+    setAddressState({ ...newAddress, numero: numeroRua }); 
   };
 
   return (

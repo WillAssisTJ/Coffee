@@ -29,13 +29,13 @@
   font-weight: 400;
   line-height: 20.8px;
   color: #403937;
-  padding-left: 50px;
+  padding-left: 70px;
 }
 .deliver img {
   position: absolute;
-  margin-left: -20px;
+  margin-left: -32px;
   width: 22px;
-}
+} 
 
 .address {
   margin-top: -8px;
@@ -45,7 +45,7 @@
   font-weight: 400;
   line-height: 18.2px;
   color: #574f4d;
-  padding-left: 50px;
+  padding-left: 70px;
 }
 .cep {
   width: 200px;

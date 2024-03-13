@@ -5,10 +5,12 @@ import location3 from "../../assets/location3.svg";
 import time from "../../assets/time.svg";
 import money3 from "../../assets/money3.svg";
 import moto from "../../assets/moto.svg";
+import { useNumeroContext } from "../../Components/NumberContext/NumeroContext";
 
 const Success = () => {
   const { isSelected1, isSelected2, isSelected3 } = usePaymentContext();
   const { address } = useAddressContext();
+  const { numero } = useNumeroContext(); 
 
   let selectedOption = "";
 
@@ -30,7 +32,7 @@ const Success = () => {
         <div className="flex-address">
           <p className="address-two">
             <img src={location3} alt="icone de localização" /> Entrega em
-            <span> {address.logradouro} </span>
+            <span> {address.logradouro}, {numero} </span> 
           </p>
           <p className="address-three">
             {address.bairro} - {address.localidade}, {address.uf}

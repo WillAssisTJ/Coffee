@@ -29,7 +29,7 @@ const SelectableButton: React.FC = () => {
       >
         <img src={credit} alt="Cartão de crédito" className="pay-img" />
         <span>Cartão de Crédito</span>
-      </button>
+      </button> 
       <button
         className={`selectable-button2 ${isSelected2 ? "selected2" : ""}`}
         onClick={() => handleButtonClick(2)}
